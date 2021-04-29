@@ -50,6 +50,7 @@ def make_plot(s, title, ylabel, xlabel):
     ax.set_facecolor('ghostwhite')
     ax.get_legend().remove()
     plt.grid()
+    #print(line.summary())
 
 #==========================================================
 def main():
