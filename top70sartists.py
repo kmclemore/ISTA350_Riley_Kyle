@@ -40,6 +40,7 @@ def main():
     '''
     This file scrapes the spotify_songs.csv and creates a visualization of the top producing rock artists.
     '''
+    #get_data('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-21/spotify_songs.csv')
     make_plot(get_data('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-21/spotify_songs.csv'), 'Top Producing Rock Artists of the 1970s', 'Artist', 'Number of Tracks')
     plt.show()
 
