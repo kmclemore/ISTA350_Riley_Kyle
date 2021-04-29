@@ -27,9 +27,9 @@ def make_plot(counts, title, ylabel, xlabel):
     This function plots a bar graph of the genres with the greatest frequencies of tracks.
     '''
     counts.plot.barh(zorder=3, color=['teal', 'teal', 'teal', 'teal', 'teal', 'firebrick'])
-    plt.title(title, weight='bold', fontsize=18)
-    plt.ylabel(ylabel, weight='bold', fontsize=15)
-    plt.xlabel(xlabel, weight='bold', fontsize=15)
+    plt.title(title, weight='bold', fontsize=18, labelpad=10)
+    plt.ylabel(ylabel, weight='bold', fontsize=15, labelpad=5)
+    plt.xlabel(xlabel, weight='bold', fontsize=15, labelpad=5)
     ax = plt.gca()
     ax.set_facecolor('ghostwhite')
     plt.grid(zorder=0, axis='x')
@@ -40,9 +40,9 @@ def make_plot2(counts, title, ylabel, xlabel):
     '''
     no_rock = counts.drop('rock')
     no_rock.plot.barh(zorder=3, color=['teal', 'teal', 'teal', 'firebrick', 'teal'])
-    plt.title(title, weight='bold', fontsize=18)
-    plt.ylabel(ylabel, weight='bold', fontsize=15)
-    plt.xlabel(xlabel, weight='bold', fontsize=15)
+    plt.title(title, weight='bold', fontsize=18, labelpad=10)
+    plt.ylabel(ylabel, weight='bold', fontsize=15, labelpad=5)
+    plt.xlabel(xlabel, weight='bold', fontsize=15, labelpad=5)
     ax = plt.gca()
     ax.set_facecolor('ghostwhite')
     plt.grid(zorder=0, axis='x')
