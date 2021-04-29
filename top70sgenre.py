@@ -60,7 +60,7 @@ def make_plot3():
     ax1.axis('equal')
     plt.title('Track Distribution Across Genres in the 70s', weight='bold')
     ax1.pie(sizes,labels=None, shadow=False, startangle=90, explode=explode, colors=colors)
-    plt.legend(labels=labels, loc="lower right", title='Genres')
+    plt.legend(labels=labels, loc="best", title='Genres')
     plt.tight_layout()
     plt.show()
 
