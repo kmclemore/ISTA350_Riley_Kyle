@@ -28,9 +28,9 @@ def make_plot(artists, title, ylabel, xlabel):
     This function plots a bar graph of the top five rock artists with the greatest number of tracks.
     '''
     artists.plot.barh(zorder=3, color=['firebrick', 'darkcyan', 'darkcyan', 'darkcyan', 'darkcyan', 'darkcyan', 'darkcyan', 'darkcyan', 'darkcyan', 'darkcyan'])
-    plt.title(title, weight='bold')
-    plt.ylabel(ylabel, weight='bold')
-    plt.xlabel(xlabel, weight='bold')
+    plt.title(title, weight='bold', fontsize=18)
+    plt.ylabel(ylabel, weight='bold', fontsize=15)
+    plt.xlabel(xlabel, weight='bold', fontsize=15)
     ax = plt.gca()
     ax.set_facecolor('aliceblue')
     plt.grid(zorder=0, axis='x')
