@@ -36,9 +36,9 @@ def make_plot(s, title, ylabel, xlabel):
     x = s.index.values
     y = s.values
     s.plot(marker='o', linestyle='', color='mediumslateblue')
-    plt.title(title, weight='bold')
-    plt.xlabel(xlabel, weight='bold')
-    plt.ylabel(ylabel, weight='bold')
+    plt.title(title, weight='bold', fontsize=18)
+    plt.xlabel(xlabel, weight='bold', fontsize=15)
+    plt.ylabel(ylabel, weight='bold', fontsize=15)
     x = s.index.values
     X = sm.add_constant(x)
     model = sm.OLS(s, X)
